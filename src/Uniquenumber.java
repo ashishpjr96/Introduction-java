@@ -6,7 +6,7 @@ public class Uniquenumber {
 		// TODO Auto-generated method stub
 
 		
-		int a []= {4,6,6,7,7,8,8,8,4,3};
+		int a []= {4,5,5,9,3,8,8,4,7,7};
 		
 		ArrayList<Integer> ab=new ArrayList<Integer>();
 		
@@ -20,16 +20,22 @@ public class Uniquenumber {
 				k++;
 				for(int j=i+1;j<a.length;j++)
 				{
-					if(a[i]==a[j]);
+					if(a[i]==a[j])
 					{
 						k++;
 					}
 				
 				}
+				System.out.println(a[i]);
+				System.out.println(k);
 				
+				if(k==1) 
+				{
+					
+					System.out.println("unique numvber is" +a[i]);
+				}
 			}
-			System.out.println(a[i]);
-			System.out.println(k);
+			
 		}
 		
 		
